@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Cormorant Garamond Italic";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src:  url("../fonts/CormorantGaramond-Italic.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond Medium";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:  url("../fonts/CormorantGaramond-Medium.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond Medium Italic";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src:  url("../fonts/CormorantGaramond-MediumItalic.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond SemiBold";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:  url("../fonts/CormorantGaramond-SemiBold.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond Bold";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:  url("../fonts/CormorantGaramond-Bold.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:  url("../fonts/Poppings-Regular.woff2") format("woff2"),
+    url("../fonts/Poppings-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:  url("../fonts/Poppings-Medium.woff2") format("woff2"),
+    url("../fonts/Poppings-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:  url("../fonts/Poppings-Bold.woff2") format("woff2"),
+    url("../fonts/Poppings-Bold.woff") format("woff");
+}
