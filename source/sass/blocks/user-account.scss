@@ -1,0 +1,42 @@
+.user-account {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 210px;
+  margin: 0;
+  padding: 22px 12px 0 0;
+  list-style: none;
+}
+
+.user-account__item {
+  margin-left: 20px;
+}
+
+.user-account__link {
+  font-size: 14px;
+  line-height: 21px;
+  color: $black;
+}
+
+@media (max-width: $tablet-width) {
+  .user-account {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .user-account__item {
+    margin: 0;
+  }
+
+  .user-account__link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 10px 0;
+    color: #ffffff;
+  }
+}

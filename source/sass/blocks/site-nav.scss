@@ -1,0 +1,17 @@
+@media (max-width: $tablet-width) {
+  .site-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0 8px;
+    list-style: none;
+  }
+
+  .site-nav__link {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+  }
+}

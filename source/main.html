@@ -8,6 +8,70 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <h1 class="page-title">Главная страница</h1>
+    <div style="display:none">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <header class="page-header page-header--closed">
+      <div class="page-header__container page-header__container--closed page-header__container--active-js">
+        <button class="page-header__menu-button menu-button">
+          <span class="visually-hidden">Show/close menu</span>
+        </button>
+        <form class="page-header__form-search form-search" action="">
+          <input class="form-search__input" type="search" placeholder="Type here to search" name="search">
+          <svg class="form-search__icon form-search__icon--closed" width="20" height="18" viewBox="0 0 20 18">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </form>
+        <a href="#" class="page-header__logo logo">
+          <img class="logo__img" src="img/logo.svg" alt="Jewellery" width="66" height="66">
+          <img class="logo__img" src="img/logo-reverse.svg" alt="Jewellery" width="66" height="66">
+        </a>
+        <ul class="page-header__user-account user-account">
+          <li class="user-account__item">
+            <a href="#" class="user-account__link link">Login</a>
+          </li>
+        </ul>
+        <ul class="page-header__user-nav user-nav">
+          <li class="user-nav__item user-cart">
+            <a href="#" class="user-cart__link link">
+              <span class="user-cart__text">Cart 0</span>
+              <span class="user-cart__icon-wrapper user-cart__icon-wrapper--closed">
+                <svg class="user-cart__icon" width="20" height="18" viewBox="0 0 20 18">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list main-nav__list--hidden">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link">What's new</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link">Chokers</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link">Necklaces</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link">Rings</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link">Earrings</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="page-header__site-nav site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">About CH</a></li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Stores & Hours</a></li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <script src="js/main.js"></script>
   </body>
 </html>

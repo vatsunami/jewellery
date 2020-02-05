@@ -1,0 +1,46 @@
+.logo__img {
+  width: 66px;
+  height: 66px;
+
+  &:first-child {
+    display: block;
+  }
+
+  &:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .logo__img {
+    &:first-child {
+      display: none;
+    }
+
+    &:last-child {
+      display: block;
+    }
+
+    &--closed {
+      &:first-child {
+        display: block;
+      }
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .logo__img {
+    width: 52px;
+    height: 52px;
+  }
+}
