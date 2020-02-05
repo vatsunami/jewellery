@@ -1,4 +1,5 @@
 .page-header {
+  min-height: 187px;
   overflow: hidden;
 }
 
@@ -30,6 +31,8 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
+    min-height: 126px;
+
     &--closed {
       position: relative;
     }
@@ -108,6 +111,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .page-header {
+    min-height: 92px;
+  }
+
   .page-header__container {
     // padding: 20px 4px 35px 7px;
     padding: 20px 1.25% 35px 2.1875%;
