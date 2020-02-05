@@ -3,6 +3,10 @@
 @import "variables.scss";
 @import "global.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/noscroll-header-menu.scss";
+@import "blocks/page-wrapper.scss";
+@import "blocks/page-content.scss";
+@import "blocks/title.scss";
 @import "blocks/logo.scss";
 @import "blocks/menu-button.scss";
 @import "blocks/link.scss";
@@ -12,6 +16,10 @@
 @import "blocks/user-nav.scss";
 @import "blocks/user-cart.scss";
 @import "blocks/site-nav.scss";
-@import "blocks/noscroll-header-menu";
 @import "blocks/page-header.scss";
 @import "blocks/promo.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/form-email.scss";
+@import "blocks/footer-nav.scss";
+@import "blocks/social.scss";

@@ -1,0 +1,33 @@
+.footer-nav {
+  width: 197px;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  list-style: none;
+
+  &--short {
+    width: 140px;
+  }
+}
+
+.footer-nav__item {
+  margin-bottom: 21px;
+}
+
+.footer-nav__link {
+  font-family: "Poppins Medium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: $mobile-width) {
+  .footer-nav {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 6px 15px 0;
+  }
+}

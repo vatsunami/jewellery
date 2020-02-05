@@ -1,6 +1,15 @@
 'use strict';
 
 (function () {
+  window.resizeInterval = 500;
+
+  window.breakpointWidth = {
+    DESKTOP: 1024,
+    TABLET: 768
+  };
+})();
+
+(function () {
   var pageHeader = document.querySelector('.page-header');
 
   if (pageHeader) {
@@ -57,10 +66,20 @@
         closeHeaderMenu();
       }
     });
+
+    window.addEventListener('load', function () {
+      closeHeaderMenu();
+    });
+
+    window.addEventListener('resize', function () {
+      var resizeTimeout;
+      if (!resizeTimeout) {
+        resizeTimeout = setTimeout(function () {
+          if (window.innerWidth >= window.breakpointWidth.DESKTOP) {
+            closeHeaderMenu();
+          }
+        }, window.resizeInterval);
+      }
+    });
   }
-
-  window.addEventListener('load', function () {
-    closeHeaderMenu();
-  });
-
 })();

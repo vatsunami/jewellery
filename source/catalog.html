@@ -11,78 +11,136 @@
     <div style="display:none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-    <header class="page-header page-header--closed">
-      <div class="page-header__container page-header__container--closed page-header__container--active-js">
-        <button class="page-header__menu-button menu-button">
-          <span class="visually-hidden">Show/close menu</span>
-        </button>
-        <form class="page-header__form-search form-search" action="https://echo.htmlacademy.ru" method="post">
-          <input class="form-search__input" type="search" placeholder="Type here to search" name="search">
-          <svg class="form-search__icon form-search__icon--closed" width="20" height="18" viewBox="0 0 20 18">
-            <use xlink:href="#icon-search"></use>
-          </svg>
-        </form>
-        <a href="#" class="page-header__logo logo">
-          <img class="logo__img" src="img/logo.svg" alt="Jewellery" width="66" height="66">
-          <img class="logo__img" src="img/logo-reverse.svg" alt="Jewellery" width="66" height="66">
-        </a>
-        <ul class="page-header__user-account user-account">
-          <li class="user-account__item">
-            <a href="#" class="user-account__link link">Login</a>
-          </li>
-        </ul>
-        <ul class="page-header__user-nav user-nav">
-          <li class="user-nav__item user-cart">
-            <a href="#" class="user-cart__link link">
-              <span class="user-cart__text">Cart 0</span>
-              <span class="user-cart__icon-wrapper user-cart__icon-wrapper--closed">
-                <svg class="user-cart__icon" width="20" height="18" viewBox="0 0 20 18">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-              </span>
+    <div class="page-wrapper">
+      <div class="page-content">
+        <header class="page-header page-header--closed">
+          <div class="page-header__container page-header__container--closed page-header__container--active-js">
+            <button class="page-header__menu-button menu-button">
+              <span class="visually-hidden">Show/close menu</span>
+            </button>
+            <form class="page-header__form-search form-search" action="https://echo.htmlacademy.ru" method="post">
+              <input class="form-search__input" type="search" placeholder="Type here to search" name="search">
+              <svg class="form-search__icon form-search__icon--closed" width="20" height="18" viewBox="0 0 20 18">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </form>
+            <a href="#" class="page-header__logo logo">
+              <img class="logo__img" src="img/logo.svg" alt="Jewellery" width="66" height="66">
+              <img class="logo__img" src="img/logo-reverse.svg" alt="Jewellery" width="66" height="66">
             </a>
-          </li>
-        </ul>
-        <nav class="page-header__main-nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link link">What's new</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link link">Chokers</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link link">Necklaces</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link link">Rings</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link link">Earrings</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="page-header__site-nav site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">About CH</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Stores & Hours</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Contact Us</a>
-          </li>
-        </ul>
+            <ul class="page-header__user-account user-account">
+              <li class="user-account__item">
+                <a href="#" class="user-account__link link">Login</a>
+              </li>
+            </ul>
+            <ul class="page-header__user-nav user-nav">
+              <li class="user-nav__item user-cart">
+                <a href="#" class="user-cart__link link">
+                  <span class="user-cart__text">Cart 0</span>
+                  <span class="user-cart__icon-wrapper user-cart__icon-wrapper--closed">
+                    <svg class="user-cart__icon" width="20" height="18" viewBox="0 0 20 18">
+                      <use xlink:href="#icon-cart"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <nav class="page-header__main-nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link link">What's new</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link link">Chokers</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link link">Necklaces</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link link">Rings</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link link">Earrings</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="page-header__site-nav site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">About CH</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Stores & Hours</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <main class="page-inner">
+          <section class="promo">
+            <div class="promo__container">
+              <h1 class="promo__title">All Jewellery</h1>
+              <p class="promo__slogan">Discover picks of fashion's finest trends in our jewellery catalog</p>
+            </div>
+          </section>
+        </main>
       </div>
-    </header>
-    <main class="inner-page">
-      <section class="promo">
-        <div class="promo__container">
-          <h1 class="promo__title">All Jewellery</h1>
-          <p class="promo__slogan">Discover picks of fashion's finest trends in our jewellery catalog</p>
+
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <section class="subscribe">
+            <h2 class="visually-hidden">Subscribe</h2>
+            <b class="subscribe__title title">The good stuff in your inbox</b>
+            <p class="subscribe__text">News and updates from CH. No spam, we promise.</p>
+            <form class="subscribe__form form-email" action="https://echo.htmlacademy.ru" method="post">
+              <input class="form-email__input" type="email" placeholder="Your E-mail">
+              <button class="form-email__button" type="submit">Sign Up</button>
+            </form>
+          </section>
+          <div class="page-footer__group-links">
+            <ul class="footer-nav">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Ordering & Payment</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Terms & Conditions</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Returns & Exchanges</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Delivery</a></li>
+            </ul>
+            <ul class="footer-nav footer-nav--short">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">About CH</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Stores & Hours</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Jobs</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Contact Us</a></li>
+            </ul>
+            <div class="social">
+              <b class="visually-hidden">Мы в социальных сетях</b>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">
+                    <span class="social__link-text">Facebook</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">
+                    <span class="social__link-text">Instagram</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--pinterest" href="#">
+                    <span class="social__link-text">Pinterest</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#">
+                    <span class="social__link-text">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+      </footer>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
