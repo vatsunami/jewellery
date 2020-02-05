@@ -62,4 +62,9 @@
   .form-search__input::placeholder {
     color: transparent;
   }
+
+  .form-search__input:-ms-input-placeholder {
+    opacity: 1;
+    color: transparent;
+  }
 }
