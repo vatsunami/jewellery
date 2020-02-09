@@ -18,26 +18,33 @@
   margin-bottom: 30px;
 
   &:last-of-type {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: $tablet-width) {
   .articles {
     flex-direction: column;
+    flex-shrink: 0;
   }
 
   .articles__list {
+    flex-shrink: 0;
     width: 100%;
     margin-bottom: 50px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   .articles__item {
+    flex-shrink: 0;
     margin-bottom: 50px;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .articles__list {
     margin-bottom: 40px;
   }

@@ -83,3 +83,42 @@
     });
   }
 })();
+
+
+var accordion = (function () {
+  return function (accordionId, toggleClass, contentClass) {
+    var accordionContainer = document.querySelector(accordionId);
+
+    if (accordionContainer) {
+      var accordionToggles = accordionContainer.querySelectorAll(toggleClass);
+      var accordionTogglesArray = [].slice.call(accordionToggles);
+
+      var generateActiveClass = function (classString) {
+        return classString.slice(1) + '--opened';
+      };
+
+      var switchActiveClasses = function (toggle, content) {
+        toggle.classList.toggle(generateActiveClass(toggleClass));
+        if (content) {
+          content.classList.toggle(generateActiveClass(contentClass));
+        }
+      };
+
+      var onToggleClick = function (evt) {
+        var target = evt.target;
+        var isToggle = accordionTogglesArray.some(function (element) {
+          return target === element;
+        });
+        if (isToggle) {
+          var group = target.parentElement;
+          var content = group.querySelector(contentClass);
+          switchActiveClasses(target, content);
+        }
+      };
+
+      accordionContainer.addEventListener('click', onToggleClick);
+    }
+  }
+})();
+
+accordion('#accordion-faq', '.faq__question', '.faq__answer');

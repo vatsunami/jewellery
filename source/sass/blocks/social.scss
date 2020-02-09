@@ -26,6 +26,15 @@
   color: #ffffff;
   background-repeat: no-repeat;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   &--facebook {
     background-image: url("../img/icon-facebook.svg");
     background-size: 8px 15px;

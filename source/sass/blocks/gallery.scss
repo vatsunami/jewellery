@@ -1,0 +1,24 @@
+.gallery {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.gallery__left {
+  margin-right: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .gallery__left {
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery__left {
+    margin: 0;
+  }
+}

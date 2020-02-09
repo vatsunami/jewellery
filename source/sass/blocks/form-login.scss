@@ -1,0 +1,164 @@
+.form-login {
+  box-sizing: border-box;
+  padding: 50px 45px 54px;
+}
+
+.form-login__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.form-login__filds-list {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.form-login__filds-item {
+  &:not(:last-of-type) {
+    margin-bottom: 26px;
+  }
+}
+
+.form-login__input,
+.form-login__recover-link,
+.form-login__signup-text,
+.form-login__signup-link {
+  font-family: "Poppins Medium", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.form-login__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 30px 8px 0;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $black;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.form-login__help {
+  box-sizing: border-box;
+  display: flex;
+  padding: 5px 1px 0;
+}
+
+.form-login__recover-link,
+.form-login__signup-link {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.form-login__recover-link {
+  display: block;
+  margin-left: auto;
+  font-size: 12px;
+  line-height: 18px;
+  color: $grey;
+  text-decoration: none;
+}
+
+.form-login__button {
+  width: 100%;
+}
+
+.form-login__signup {
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 15px;
+}
+
+.form-login__signup-left,
+.form-login__signup-right {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.form-login__signup-left {
+  width: 224px;
+  padding-right: 5px;
+}
+
+.form-login__signup-right {
+  width: 116px;
+  padding-left: 5px;
+}
+
+
+.form-login__signup-text,
+.form-login__signup-link {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.form-login__signup-text {
+  margin-left: auto;
+  color: $grey;
+}
+
+.form-login__signup-link {
+  color: $black;
+  text-decoration: none;
+}
+
+@media (max-width: $tablet-width) {
+  .form-login {
+    padding: 50px 51px 54px;
+  }
+
+  .form-login__signup-left {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form-login {
+    padding: 37px 15px 39px;
+  }
+
+  .form-login__title {
+    margin-bottom: 17px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .form-login__filds-list {
+    margin-bottom: 35px;
+  }
+
+  .form-login__filds-item {
+    &:not(:last-of-type) {
+      margin-bottom: 21px;
+    }
+  }
+
+  .form-login__signup {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .form-login__signup-left {
+    width: 175px;
+  }
+
+  .form-login__signup-right {
+    width: 65px;
+    padding-left: 5px;
+  }
+}

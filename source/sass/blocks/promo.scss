@@ -4,10 +4,19 @@
 
   &--main {
     min-height: 463px;
-    background-image: url("../img/background-promo-main-desktop@2x.jpg");
+    background-image: url("../img/background-promo-main-desktop@1x.jpg");
     background-position: center 0;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .promo {
+    &--main {
+      background-image: url("../img/background-promo-main-desktop@2x.jpg");
+    }
   }
 }
 
@@ -67,7 +76,16 @@
 @media (max-width: $tablet-width) {
   .promo {
     &--main {
-      background-image: url("../img/background-promo-main-tablet@2x.jpg");
+      background-image: url("../img/background-promo-main-tablet@1x.jpg");
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .promo {
+      &--main {
+        background-image: url("../img/background-promo-main-tablet@2x.jpg");
+      }
     }
   }
 
@@ -78,9 +96,12 @@
   }
 
   .promo__title {
+    font-size: 38px;
+    line-height: 49px;
+
     &--main {
-      font-size: 38px;
-      line-height: 49px;
+      font-size: 45px;
+      line-height: 58px;
     }
   }
 
@@ -92,9 +113,18 @@
 @media (max-width: $mobile-width) {
   .promo {
     &--main {
-      background-image: url("../img/background-promo-main-mobile@2x-test.jpg");
+      background-image: url("../img/background-promo-main-mobile@1x.jpg");
       background-position: center;
       background-size: cover;
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .promo {
+      &--main {
+        background-image: url("../img/background-promo-main-mobile@2x.jpg");
+      }
     }
   }
 
@@ -106,12 +136,22 @@
     }
   }
 
+  .promo__title {
+    font-size: 34px;
+    line-height: 44px;
+
+    &--main {
+      font-size: 38px;
+      line-height: 49px;
+    }
+  }
+
   .promo__slogan {
     font-size: 22px;
     line-height: 26px;
 
     &--main {
-      margin-top: -6px;
+      margin-top: -7px;
       font-size: 34px;
       line-height: 44px;
     }

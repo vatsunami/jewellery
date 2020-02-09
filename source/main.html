@@ -19,8 +19,9 @@
               <span class="visually-hidden">Show/close menu</span>
             </button>
             <form class="page-header__form-search form-search" action="https://echo.htmlacademy.ru" method="post">
-              <input class="form-search__input" type="search" placeholder="Type here to search" name="search">
-              <svg class="form-search__icon form-search__icon" width="20" height="18" viewBox="0 0 20 18">
+              <label class="visually-hidden" for="search">Search:</label>
+              <input class="form-search__input" type="search" placeholder="Type here to search" name="search" id="search">
+              <svg class="form-search__icon form-search__icon" width="14" height="14" viewBox="0 0 14 14">
                 <use xlink:href="#icon-search"></use>
               </svg>
             </form>
@@ -90,7 +91,9 @@
           <section class="section">
             <div class="section__container">
               <div class="section__header">
-                <h2 class="section__title title">New In</h2>
+                <h2 class="section__title title">
+                  <span class="section__title-text">New In</span>
+                </h2>
                 <a href="#" class="section__source-link source-link">Shop Now</a>
               </div>
               <div class="section__slider-cards slider-cards">
@@ -101,8 +104,11 @@
                   </div>
                   <ul class="slider-cards__list">
                     <li class="slider-cards__item product-card product-card--slider">
-                      <a class="product-card__picture product-card__picture--slider">
-                        <img src="img/image-product-#.jpg" alt="Necklace with amethyst">
+                      <a href="#" class="product-card__picture product-card__picture--slider">
+                        <picture>
+                          <source type="image/webp" srcset="img/image-product-1@1x.webp 1x, img/image-product-1@1x.webp 2x">
+                          <img src="img/image-product-1@1x.jpg" srcset="img/image-product-1@1x.jpg 1x, img/image-product-1@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="284">
+                        </picture>
                       </a>
                       <a href="#" class="product-card__link">
                         <h3 class="product-card__name">Necklace with amethyst</h3>
@@ -110,8 +116,11 @@
                       <span class="product-card__price">$145</span>
                     </li>
                     <li class="slider-cards__item product-card product-card--slider">
-                      <a class="product-card__picture product-card__picture--slider">
-                        <img src="img/image-product-#.jpg" alt="Layered choker">
+                      <a href="#" class="product-card__picture product-card__picture--slider">
+                        <picture>
+                          <source type="image/webp" srcset="img/image-product-2@1x.webp 1x, img/image-product-2@1x.webp 2x">
+                          <img src="img/image-product-2@1x.jpg" srcset="img/image-product-2@1x.jpg 1x, img/image-product-2@2x.jpg 2x" alt="Layered choker" width="270" height="284">
+                        </picture>
                       </a>
                       <a href="#" class="product-card__link">
                         <h3 class="product-card__name">Layered choker</h3>
@@ -119,8 +128,11 @@
                       <span class="product-card__price">$115</span>
                     </li>
                     <li class="slider-cards__item product-card product-card--slider">
-                      <a class="product-card__picture product-card__picture--slider">
-                        <img src="img/image-product-#.jpg" alt="Gold chain">
+                      <a href="#" class="product-card__picture product-card__picture--slider">
+                        <picture>
+                          <source type="image/webp" srcset="img/image-product-3@1x.webp 1x, img/image-product-3@1x.webp 2x">
+                          <img src="img/image-product-3@1x.jpg" srcset="img/image-product-3@1x.jpg 1x, img/image-product-3@2x.jpg 2x" alt="Gold chain" width="270" height="284">
+                        </picture>
                       </a>
                       <a href="#" class="product-card__link">
                         <h3 class="product-card__name">Gold chain</h3>
@@ -128,8 +140,11 @@
                       <span class="product-card__price">$215</span>
                     </li>
                     <li class="slider-cards__item product-card product-card--slider">
-                      <a class="product-card__picture product-card__picture--slider">
-                        <img src="img/image-product-#.jpg" alt="Galaxy earrings">
+                      <a href="#" class="product-card__picture product-card__picture--slider">
+                        <picture>
+                          <source type="image/webp" srcset="img/image-product-4@1x.webp 1x, img/image-product-4@1x.webp 2x">
+                          <img src="img/image-product-4@1x.jpg" srcset="img/image-product-4@1x.jpg 1x, img/image-product-4@2x.jpg 2x" alt="Galaxy earrings" width="270" height="284">
+                        </picture>
                       </a>
                       <a href="#" class="product-card__link">
                         <h3 class="product-card__name">Galaxy Earrings</h3>
@@ -149,7 +164,7 @@
                   <div class="slider-cards__pagination pagination">
                     <ul class="slider-cards__pagination-list pagination__list">
                       <li class="slider-cards__pagination-item pagination__item">
-                        <button class="pagination__button">1</button>
+                        <button class="pagination__button pagination__button--active">1</button>
                       </li>
                       <li class="slider-cards__pagination-item pagination__item">
                         <button class="pagination__button">2</button>
@@ -176,7 +191,9 @@
           <section class="section">
             <div class="section__container section__container--blog">
               <div class="section__header section__header--blog">
-                <h2 class="section__title section__title--blog title">Blog</h2>
+                <h2 class="section__title section__title--blog title">
+                  <span class="section__title-text">Blog</span>
+                </h2>
                 <a href="#" class="section__source-link source-link">Read All</a>
               </div>
               <div class="articles">
@@ -184,8 +201,10 @@
                   <li class="articles__item article-card">
                     <div class="article-card__picture">
                       <picture>
-                        <source media="(max-width: 1024px)" srcset="img/image-article-1-tablet@2x.jpg">
-                        <img src="img/image-article-1-desktop@2x.jpg" alt="How to care for your jewellery" width="285" height="300">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-article-1-tablet@1x.webp 1x, img/image-article-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-article-1-desktop@1x.webp 1x, img/image-article-1-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" srcset="img/image-article-1-tablet@1x.jpg 1x, img/image-article-1-tablet@2x.jpg 2x">
+                        <img src="img/image-article-1-desktop@2x.jpg" srcset="img/image-article-1-desktop@1x.jpg 1x, img/image-article-1-desktop@2x.jpg 2x" alt="How to care for your jewellery" width="285" height="300">
                       </picture>
                     </div>
                     <div class="article-card__description">
@@ -199,11 +218,13 @@
                   <li class="articles__item article-card">
                     <div class="article-card__picture article-card__picture--reverse">
                       <picture>
-                        <source media="(max-width: 1024px)" srcset="img/image-article-2-tablet@2x.jpg">
-                        <img src="img/image-article-2-desktop@2x.jpg" alt="Power of crystals" width="285" height="300">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-article-2-tablet@1x.webp 1x, img/image-article-2-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-article-2-desktop@1x.webp 1x, img/image-article-2-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" srcset="img/image-article-2-tablet@1x.jpg 1x, img/image-article-2-tablet@2x.jpg 2x">
+                        <img src="img/image-article-2-desktop@2x.jpg" srcset="img/image-article-2-desktop@1x.jpg 1x, img/image-article-2-desktop@2x.jpg 2x" alt="Power of crystals" width="285" height="300">
                       </picture>
                     </div>
-                    <div class="article-card__description article-card__description--reverse">
+                    <div class="article-card__description article-card__description--reverse article-card__description--short">
                       <span class="article-card__date">September 23, 2019</span>
                       <h3 class="article-card__title">Power of crystals</h3>
                       <div class="article-card__link-wrapper">
@@ -216,10 +237,11 @@
                   <li class="articles__item article-card article-card--large">
                     <div class="article-card__picture article-card__picture--large">
                       <picture>
-                        <source media="(max-width: 1024px)" srcset="img/image-article-3-tablet@2x.jpg">
-                        <img src="img/image-article-3-desktop@2x.jpg" alt="AW 19 trends" width="570" height="630">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-article-3-tablet@1x.webp 1x, img/image-article-3-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-article-3-desktop@2x.webp 1x, img/image-article-3-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" srcset="img/image-article-3-tablet@1x.jpg 1x, img/image-article-3-tablet@2x.jpg 2x">
+                        <img src="img/image-article-3-desktop@2x.jpg" srcset="img/image-article-3-desktop@1x.jpg 1x, img/image-article-3-desktop@2x.jpg 2x" alt="AW 19 trends" width="570" height="630">
                       </picture>
-
                     </div>
                     <div class="article-card__description article-card__description--large">
                       <span class="article-card__date">September 18, 2019</span>
@@ -229,6 +251,106 @@
                       </div>
                     </div>
                   </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section__container">
+              <div class="section__header section__header--no-source-link">
+                <h2 class="section__title title">
+                  <span class="section__title-text">Frequently asked questions</span>
+                </h2>
+              </div>
+              <div class="faq" id="accordion-faq">
+                <ul class="faq__list">
+                  <li class="faq__item">
+                    <h3 class="faq__question faq__question--opened" tabindex="0">What materials are the&nbsp;jewellery made of?</h3>
+                    <div class="faq__answer faq__answer--opened">
+                      <p class="faq__answer-text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains
+                        precious and semiprecious stones and crystals.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item">
+                    <h3 class="faq__question" tabindex="0">Which countries do&nbsp;you&nbsp;deliver to?</h3>
+                    <div class="faq__answer"></div>
+                  </li>
+                  <li class="faq__item">
+                    <h3 class="faq__question" tabindex="0">What are the payment&nbsp;methods?</h3>
+                    <div class="faq__answer"></div>
+                  </li>
+                  <li class="faq__item">
+                    <h3 class="faq__question" tabindex="0">Can I return the jewellery&nbsp;if it didn't fit me?</h3>
+                    <div class="faq__answer"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section__container section__container--gallery">
+              <div class="section__header section__header--gallery">
+                <h2 class="section__title section__title--at title">
+                  <span class="section__title-text"><span class="section__title-at">@</span>Chjewellery</span>
+                </h2>
+                <a href="#" class="section__source-link source-link">Follow Us</a>
+              </div>
+              <div class="gallery">
+                <div class="gallery__left gallery-normal">
+                  <div class="gallery-normal__left">
+                    <div class="gallery-normal__picture gallery-normal__picture--left-top">
+                      <picture>
+                        <source type="image/webp" srcset="img/image-gallery-1@1x.webp 1x, img/image-gallery-1@2x.webp 2x">
+                        <img src="img/image-gallery-1@1x.jpg" srcset="img/image-gallery-1@1x.jpg 1x, img/image-gallery-1@2x.jpg 2x" alt="Image 1" width="230" height="230">
+                      </picture>
+                    </div>
+                    <div class="gallery-normal__picture gallery-normal__picture--left-bottom">
+                      <picture>
+                        <source type="image/webp" srcset="img/image-gallery-2@1x.webp 1x, img/image-gallery-2@2x.webp 2x">
+                        <img src="img/image-gallery-2@1x.jpg" srcset="img/image-gallery-2@1x.jpg 1x, img/image-gallery-2@2x.jpg 2x" alt="Image 2" width="230" height="154">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="gallery-normal__right">
+                    <div class="gallery-normal__picture gallery-normal__picture--large">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/image-gallery-3-mobile@2x.jpg">
+                        <img src="img/image-gallery-3-desktop@2x.jpg" alt="Image 3" width="400" height="414">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__right gallery-masonry">
+                  <div class="gallery-masonry__left">
+                    <div class="gallery-masonry__picture gallery-masonry__picture--left-top">
+                      <picture>
+                        <source type="image/webp" srcset="img/image-gallery-4@1x.webp 1x, img/image-gallery-4@2x.webp 2x">
+                        <img src="img/image-gallery-4@1x.jpg" srcset="img/image-gallery-4@1x.jpg 1x, img/image-gallery-4@2x.jpg 2x" alt="Image 4" width="232" height="193">
+                      </picture>
+                    </div>
+                    <div class="gallery-masonry__picture gallery-masonry__picture--left-bottom">
+                      <picture>
+                        <source type="image/webp" srcset="img/image-gallery-5@1x.webp 1x, img/image-gallery-5@2x.webp 2x">
+                        <img src="img/image-gallery-5@1x.jpg" srcset="img/image-gallery-5@1x.jpg 1x, img/image-gallery-5@2x.jpg 2x" alt="Image 5" width="218" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="gallery-masonry__right">
+                    <div class="gallery-masonry__picture gallery-masonry__picture--right-top">
+                      <picture>
+                        <source type="image/webp" srcset="img/image-gallery-6@1x.webp 1x, img/image-gallery-6@2x.webp 2x">
+                        <img src="img/image-gallery-6@1x.jpg" srcset="img/image-gallery-6@1x.jpg 1x, img/image-gallery-6@2x.jpg 2x" alt="Image 6" width="218" height="218">
+                      </picture>
+                    </div>
+                    <div class="gallery-masonry__picture gallery-masonry__picture--right-bottom">
+                      <picture>
+                        <source type="image/webp" srcset="img/image-gallery-7@1x.webp 1x, img/image-gallery-7@2x.webp 2x">
+                        <img src="img/image-gallery-7@1x.jpg" srcset="img/image-gallery-7@1x.jpg 1x, img/image-gallery-7@2x.jpg 2x" alt="Image 7" width="232" height="166">
+                      </picture>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -243,7 +365,8 @@
             <b class="subscribe__title title">The good stuff in your inbox</b>
             <p class="subscribe__text">News and updates from CH. No spam, we promise.</p>
             <form class="subscribe__form form-email" action="https://echo.htmlacademy.ru" method="post">
-              <input class="form-email__input" type="email" placeholder="Your E-mail">
+              <label class="visually-hidden" for="subscribe-email">E-mail:</label>
+              <input class="form-email__input" type="email" placeholder="Your E-mail" name="email" id="subscribe-email">
               <button class="form-email__button" type="submit">Sign Up</button>
             </form>
           </section>
@@ -288,6 +411,42 @@
           </div>
         </div>
       </footer>
+      <section class="modal modal-login modal-login--closed">
+        <div class="modal-login__container">
+          <div class="modal-login__button-close">
+            <button class="button-close">
+              <span class="visually-hidden">Close</span>
+            </button>
+          </div>
+          <div class="modal-login__content">
+            <form class="modal-login__form form-login" action="https://echo.htmlacademy.ru" method="post">
+              <h2 class="form-login__title title">Log In</h2>
+              <ul class="form-login__filds-list">
+                <li class="form-login__filds-item">
+                  <label class="visually-hidden">E-mail:</label>
+                  <input class="form-login__input" type="email" placeholder="Your E-mail">
+                </li>
+                <li class="form-login__filds-item">
+                  <label class="visually-hidden">Password:</label>
+                  <input class="form-login__input" type="password" placeholder="Password" name="password">
+                  <div class="form-login__help">
+                    <a href="#" class="form-login__recover-link">Forgot your password?</a>
+                  </div>
+                </li>
+              </ul>
+              <button class="form-login__button button" type="submit">Log in</button>
+              <div class="form-login__signup">
+                <div class="form-login__signup-left">
+                  <span class="form-login__signup-text">Don't have an account?</span>
+                </div>
+                <div class="form-login__signup-right">
+                  <a class="form-login__signup-link" href="">Sign up</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="js/main.js"></script>
   </body>

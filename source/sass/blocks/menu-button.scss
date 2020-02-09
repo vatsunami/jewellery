@@ -8,6 +8,15 @@
   background-color: transparent;
   border: none;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   &::before {
     content: "";
     position: absolute;
