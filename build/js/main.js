@@ -122,3 +122,4 @@ var accordion = (function () {
 })();
 
 accordion('#accordion-faq', '.faq__question', '.faq__answer');
+accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__group');

@@ -99,87 +99,101 @@
               <div class="section__slider-cards slider-cards">
                 <div class="slider-cards__container">
                   <div class="slider-cards__toggles">
-                    <button class="slider-cards__toggle">Previous</button>
-                    <button class="slider-cards__toggle">Next</button>
+                    <button class="slider-cards__toggle slider-cards__toggle--prev">
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="slider-cards__toggle slider-cards__toggle--next">
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <ul class="slider-cards__list">
-                    <li class="slider-cards__item product-card product-card--slider">
-                      <a href="#" class="product-card__picture product-card__picture--slider">
-                        <picture>
-                          <source type="image/webp" srcset="img/image-product-1@1x.webp 1x, img/image-product-1@1x.webp 2x">
-                          <img src="img/image-product-1@1x.jpg" srcset="img/image-product-1@1x.jpg 1x, img/image-product-1@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="284">
-                        </picture>
-                      </a>
-                      <a href="#" class="product-card__link">
-                        <h3 class="product-card__name">Necklace with amethyst</h3>
-                      </a>
-                      <span class="product-card__price">$145</span>
-                    </li>
-                    <li class="slider-cards__item product-card product-card--slider">
-                      <a href="#" class="product-card__picture product-card__picture--slider">
-                        <picture>
-                          <source type="image/webp" srcset="img/image-product-2@1x.webp 1x, img/image-product-2@1x.webp 2x">
-                          <img src="img/image-product-2@1x.jpg" srcset="img/image-product-2@1x.jpg 1x, img/image-product-2@2x.jpg 2x" alt="Layered choker" width="270" height="284">
-                        </picture>
-                      </a>
-                      <a href="#" class="product-card__link">
-                        <h3 class="product-card__name">Layered choker</h3>
-                      </a>
-                      <span class="product-card__price">$115</span>
-                    </li>
-                    <li class="slider-cards__item product-card product-card--slider">
-                      <a href="#" class="product-card__picture product-card__picture--slider">
-                        <picture>
-                          <source type="image/webp" srcset="img/image-product-3@1x.webp 1x, img/image-product-3@1x.webp 2x">
-                          <img src="img/image-product-3@1x.jpg" srcset="img/image-product-3@1x.jpg 1x, img/image-product-3@2x.jpg 2x" alt="Gold chain" width="270" height="284">
-                        </picture>
-                      </a>
-                      <a href="#" class="product-card__link">
-                        <h3 class="product-card__name">Gold chain</h3>
-                      </a>
-                      <span class="product-card__price">$215</span>
-                    </li>
-                    <li class="slider-cards__item product-card product-card--slider">
-                      <a href="#" class="product-card__picture product-card__picture--slider">
-                        <picture>
-                          <source type="image/webp" srcset="img/image-product-4@1x.webp 1x, img/image-product-4@1x.webp 2x">
-                          <img src="img/image-product-4@1x.jpg" srcset="img/image-product-4@1x.jpg 1x, img/image-product-4@2x.jpg 2x" alt="Galaxy earrings" width="270" height="284">
-                        </picture>
-                      </a>
-                      <a href="#" class="product-card__link">
-                        <h3 class="product-card__name">Galaxy Earrings</h3>
-                      </a>
-                      <span class="product-card__price">$95</span>
-                    </li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                    <li class="slider-cards__item product-card product-card--slider"></li>
-                  </ul>
+                  <div class="slider-cards__list-wrapper">
+                    <ul class="slider-cards__list">
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-1@1x.webp 1x, img/image-product-1@1x.webp 2x">
+                            <img src="img/image-product-1@1x.jpg" srcset="img/image-product-1@1x.jpg 1x, img/image-product-1@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Necklace with amethyst</h3>
+                        </a>
+                        <span class="product-card__price">$145</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-2@1x.webp 1x, img/image-product-2@1x.webp 2x">
+                            <img src="img/image-product-2@1x.jpg" srcset="img/image-product-2@1x.jpg 1x, img/image-product-2@2x.jpg 2x" alt="Layered choker" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Layered choker</h3>
+                        </a>
+                        <span class="product-card__price">$115</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-3@1x.webp 1x, img/image-product-3@1x.webp 2x">
+                            <img src="img/image-product-3@1x.jpg" srcset="img/image-product-3@1x.jpg 1x, img/image-product-3@2x.jpg 2x" alt="Gold chain" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Gold chain</h3>
+                        </a>
+                        <span class="product-card__price">$215</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-4@1x.webp 1x, img/image-product-4@1x.webp 2x">
+                            <img src="img/image-product-4@1x.jpg" srcset="img/image-product-4@1x.jpg 1x, img/image-product-4@2x.jpg 2x" alt="Galaxy earrings" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Galaxy Earrings</h3>
+                        </a>
+                        <span class="product-card__price">$95</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                    </ul>
+                  </div>
+
+                  <div class="slider-cards__page-counter">
+                    <div class="page-counter">
+                      <span class="page-counter__number page-counter__number--current">1</span>
+                      <span class="page-counter__separator">of</span>
+                      <span class="page-counter__number page-counter__number--max">6</span>
+                    </div>
+                  </div>
 
                   <div class="slider-cards__pagination pagination">
                     <ul class="slider-cards__pagination-list pagination__list">
                       <li class="slider-cards__pagination-item pagination__item">
-                        <button class="pagination__button pagination__button--active">1</button>
+                        <button class="pagination__link pagination__link--active">1</button>
                       </li>
                       <li class="slider-cards__pagination-item pagination__item">
-                        <button class="pagination__button">2</button>
+                        <button class="pagination__link">2</button>
                       </li>
                       <li class="slider-cards__pagination-item pagination__item">
-                        <button class="pagination__button">3</button>
+                        <button class="pagination__link">3</button>
                       </li>
                       <li class="slider-cards__pagination-item pagination__item">
-                        <button class="pagination__button">4</button>
+                        <button class="pagination__link">4</button>
                       </li>
                       <li class="slider-cards__pagination-item pagination__item">
-                        <button class="pagination__button">5</button>
+                        <button class="pagination__link">5</button>
                       </li>
                       <li class="slider-cards__pagination-item pagination__item">
-                        <button class="pagination__button">6</button>
+                        <button class="pagination__link">6</button>
                       </li>
                     </ul>
                   </div>

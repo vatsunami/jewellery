@@ -2,30 +2,62 @@
   position: relative;
 }
 
-.slider-cards__container {
+.slider-cards__toggles {
   position: relative;
-  overflow: hidden;
+  width: 100%;
+  z-index: 1;
 }
 
-.slider-cards__toggles {
-  display: none;
+.slider-cards__toggle {
+  position: absolute;
+  top: -114px;
+  display: block;
+  width: 40px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow-slider-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 11px;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &--prev {
+    left: -6px;
+  }
+
+  &--next {
+    right: -6px;
+    transform: rotate(180deg);
+  }
+}
+
+.slider-cards__list-wrapper {
+  overflow: hidden;
 }
 
 .slider-cards__list {
   display: flex;
+  width: 3600px;
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 54px;
   padding: 0;
   list-style: none;
   transform: translateX(-15px);
 }
 
-.slider-cards__pagination-list {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.slider-cards__page-counter {
+  display: none;
 }
 
 .slider-cards__pagination-item {
@@ -35,13 +67,27 @@
 }
 
 @media (max-width: $tablet-width) {
+  .slider-cards__toggle {
+    top: -104px;
+    background-image: url("../img/icon-arrow-slider-tablet.svg");
+    background-size: 41px 17px;
+
+
+    &--prev {
+      left: -2px;
+    }
+
+    &--next {
+      right: -2px;
+    }
+  }
+
   .slider-cards__list {
-    margin: 0 0 42px;
+    width: 4248px;
+    margin: 0 0 43px;
   }
 
   .slider-cards__pagination-item {
-    margin-left: 1px;
-
     &:nth-of-type(n + 4) {
       display: block;
     }
@@ -49,7 +95,21 @@
 }
 
 @media (max-width: $mobile-width) {
+  .slider-cards__toggles {
+    display: none;
+  }
+
   .slider-cards__list {
+    width: 1920px;
     margin: 0 0 32px;
+  }
+
+  .slider-cards__page-counter {
+    display: block;
+    padding-right: 5px;
+  }
+
+  .slider-cards__pagination-list {
+    display: none;
   }
 }

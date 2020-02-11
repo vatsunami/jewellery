@@ -1,13 +1,20 @@
-.pagination__button {
-  box-sizing: border-box;
-  padding: 0 6px;
-  font-family: "Poppins Medium", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__link {
+  display: block;
+  margin: 0 7px 0 6px;
   color: $grey;
   background-color: transparent;
-  border: 0;
+  padding: 0;
+  border: none;
+  vertical-align: top;
+  text-decoration: none;
   cursor: pointer;
 
   &:hover,
@@ -21,5 +28,12 @@
 
   &--active {
     color: $black;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .pagination__link {
+    margin: 0 6px 0 7px;
+    padding: 0 5px;
   }
 }

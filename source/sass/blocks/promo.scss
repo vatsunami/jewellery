@@ -1,19 +1,22 @@
 .promo {
   min-height: 235px;
   background-color: #624432;
+  background-image: url("../img/background-promo-catalog-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
 
   &--main {
     min-height: 463px;
     background-image: url("../img/background-promo-main-desktop@1x.jpg");
-    background-position: center 0;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
 @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
   .promo {
+    background-image: url("../img/background-promo-catalog-desktop@2x.jpg");
+
     &--main {
       background-image: url("../img/background-promo-main-desktop@2x.jpg");
     }
@@ -75,6 +78,8 @@
 
 @media (max-width: $tablet-width) {
   .promo {
+    background-image: url("../img/background-promo-catalog-tablet@1x.jpg");
+
     &--main {
       background-image: url("../img/background-promo-main-tablet@1x.jpg");
     }
@@ -83,6 +88,8 @@
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
     .promo {
+      background-image: url("../img/background-promo-catalog-tablet@2x.jpg");
+
       &--main {
         background-image: url("../img/background-promo-main-tablet@2x.jpg");
       }
@@ -96,8 +103,8 @@
   }
 
   .promo__title {
-    font-size: 38px;
-    line-height: 49px;
+    font-size: 34px;
+    line-height: 44px;
 
     &--main {
       font-size: 45px;
@@ -112,6 +119,8 @@
 
 @media (max-width: $mobile-width) {
   .promo {
+    background-image: url("../img/background-promo-catalog-mobile@1x.jpg");
+
     &--main {
       background-image: url("../img/background-promo-main-mobile@1x.jpg");
       background-position: center;
@@ -122,6 +131,8 @@
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
     .promo {
+      background-image: url("../img/background-promo-catalog-mobile@2x.jpg");
+
       &--main {
         background-image: url("../img/background-promo-main-mobile@2x.jpg");
       }
@@ -129,7 +140,7 @@
   }
 
   .promo__container {
-    padding: 79px 20px 84px;
+    padding: 79px 20px 83px;
 
     &--main {
       padding: 189px 20px 187px;
@@ -137,10 +148,12 @@
   }
 
   .promo__title {
+    margin-bottom: 3px;
     font-size: 34px;
     line-height: 44px;
 
     &--main {
+      margin-bottom: 0;
       font-size: 38px;
       line-height: 49px;
     }
