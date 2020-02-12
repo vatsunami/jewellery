@@ -9,7 +9,7 @@
   }
 
   &--gallery {
-    padding: 111px 30px 155px;
+    padding: 111px 30px 130px;
   }
 }
 
@@ -94,7 +94,7 @@
 
 @media (max-width: $mobile-width) {
   .section__container {
-    padding: 60px 15px 0;
+    padding: 60px 4.6875% 0;
 
     &--blog {
       padding-top: 55px;
@@ -102,7 +102,7 @@
 
     &--gallery {
       padding-top: 51px;
-      padding-bottom: 53px;
+      padding-bottom: 56px;
     }
 
     &--extra {
