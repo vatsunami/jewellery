@@ -48,6 +48,16 @@
       height: 3px;
     }
 
+    &--small {
+      &::before,
+      &::after {
+        left: 12px;
+        width: 18px;
+        height: 2px;
+        background-color: $black;
+      }
+    }
+
     &--inverse {
       box-sizing: border-box;
       background-color: $black;

@@ -1,0 +1,24 @@
+.info-tabs__toggles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+
+.info-tabs__toggle {
+  display: block;
+  margin-right: 37px;
+  padding: 0;
+  color: $grey;
+  background-color: transparent;
+  border: none;
+
+  &--active {
+    color: $black;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .info-tabs__toggle {
+    margin-right: 40px;
+  }
+}

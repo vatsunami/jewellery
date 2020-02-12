@@ -21,7 +21,7 @@
             </button>
             <form class="page-header__form-search form-search" action="https://echo.htmlacademy.ru" method="post">
               <input class="form-search__input" type="search" placeholder="Type here to search" name="search">
-              <svg class="form-search__icon" width="20" height="18" viewBox="0 0 20 18">
+              <svg class="form-search__icon" width="14" height="14" viewBox="0 0 14 14">
                 <use xlink:href="#icon-search"></use>
               </svg>
             </form>
@@ -80,7 +80,216 @@
         </header>
 
         <main class="page-inner">
+          <h1 class="visually-hidden">Card</h1>
+          <section class="product">
+            <div class="product__container">
+              <div class="product__wrapper">
+                <div class="product__gallery product-gallery">
+                  <div class="product-gallery__toggles">
+                    <button class="product-gallery__toggle">
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="product-gallery__toggle">
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <ul class="product-gallery__pictures">
+                    <li class="product-gallery__picture product-gallery__picture--large">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-product-gallery-1-tablet@1x.webp 1x, img/image-product-gallery-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-product-gallery-1-desktop@1x.webp 1x, img/image-product-gallery-1-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" srcset="img/image-product-gallery-1-tablet@1x.jpg 1x, img/image-product-gallery-1-tablet@2x.jpg 2x">
+                        <img src="img/image-product-gallery-1-desktop@1x.jpg" scrset="img/image-product-gallery-1-desktop@1x.jpg 1x, img/image-product-gallery-1-desktop@2x.jpg 2x" alt="Image 1" width="470" height="435">
+                      </picture>
+                    </li>
+                    <li class="product-gallery__picture">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-product-gallery-2-tablet@1x.webp 1x, img/image-product-gallery-2-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-product-gallery-2-desktop@1x.webp 1x, img/image-product-gallery-2-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" srcset="img/image-product-gallery-2-tablet@1x.jpg 1x, img/image-product-gallery-2-tablet@2x.jpg 2x">
+                        <img src="img/image-product-gallery-2-desktop@1x.jpg" scrset="img/image-product-gallery-2@1x.jpg 1x, img/image-product-gallery-2@2x.jpg 2x" alt="Image 2" width="100" height="125">
+                      </picture>
+                    </li>
+                    <li class="product-gallery__picture">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-product-gallery-3-tablet@1x.webp 1x, img/image-product-gallery-3-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-product-gallery-3-desktop@1x.webp 1x, img/image-product-gallery-3-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" srcset="img/image-product-gallery-3-tablet@1x.jpg 1x, img/image-product-gallery-3-tablet@2x.jpg 2x">
+                        <img src="img/image-product-gallery-3-desktop@1x.jpg" scrset="img/image-product-gallery-3@1x.jpg 1x, img/image-product-gallery-3@2x.jpg 2x" alt="Image 3" width="100" height="125">
+                      </picture>
+                    </li>
+                    <li class="product-gallery__picture">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-product-gallery-4-tablet@1x.webp 1x, img/image-product-gallery-4-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-product-gallery-4-desktop@1x.webp 1x, img/image-product-gallery-4-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" srcset="img/image-product-gallery-4-tablet@1x.jpg 1x, img/image-product-gallery-4-tablet@2x.jpg 2x">
+                        <img src="img/image-product-gallery-4-desktop@1x.jpg" scrset="img/image-product-gallery-4@1x.jpg 1x, img/image-product-gallery-4@2x.jpg 2x" alt="Image 4" width="100" height="125">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product__info product-info">
+                  <div class="product-info__header">
+                    <h2 class="product-info__name">Gold Necklace</h2>
+                    <b class="product-info__price">$ 115</b>
+                  </div>
+                  <div class="product-info__description info-tabs">
+                    <div class="info-tabs__toggles">
+                      <button class="info-tabs__toggle">Description</button>
+                      <button class="info-tabs__toggle info-tabs__toggle--active">Additional info</button>
+                    </div>
+                    <div class="info-tabs__sections">
+                      <div class="info-tabs__section">
+                        <table class="info-tabs__parameters parameters">
+                          <tbody class="parameters__body">
+                            <tr class="parameters__row">
+                              <th class="parameters__data parameters__data--field">Metal type</th>
+                              <td class="parameters__data">Gold 585</td>
+                            </tr>
+                            <tr class="parameters__row">
+                              <th class="parameters__data parameters__data--field">Stone</th>
+                              <td class="parameters__data">Turquoise</td>
+                            </tr>
+                            <tr class="parameters__row">
+                              <th class="parameters__data parameters__data--field">Size</th>
+                              <td class="parameters__data">18" / 20"</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="info-tabs__section"></div>
+                    </div>
+                  </div>
+                  <a class="product-info__button button">Add to cart</a>
+                  <ul class="product-info__terms">
+                    <li class="product-info__term">
+                      <span class="product-info__term-text">14 Day Returns</span>
+                    </li>
+                    <li class="product-info__term">
+                      <span class="product-info__term-text">2-Year Warranty</span>
+                    </li>
+                    <li class="product-info__term">
+                      <span class="product-info__term-text">Free Shipping</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <section class="section">
+            <div class="section__container section__container--extra">
+              <div class="section__header section__header--extra">
+                <h2 class="section__title section__title--extra title">
+                  <span class="section__title-text">You May Also Like</span>
+                </h2>
+                <a href="#" class="section__source-link source-link">Shop Now</a>
+              </div>
+              <div class="section__slider-cards slider-cards">
+                <div class="slider-cards__container">
+                  <div class="slider-cards__toggles">
+                    <button class="slider-cards__toggle slider-cards__toggle--prev">
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="slider-cards__toggle slider-cards__toggle--next">
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="slider-cards__list-wrapper">
+                    <ul class="slider-cards__list">
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-1@1x.webp 1x, img/image-product-1@1x.webp 2x">
+                            <img src="img/image-product-1@1x.jpg" srcset="img/image-product-1@1x.jpg 1x, img/image-product-1@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Necklace with amethyst</h3>
+                        </a>
+                        <span class="product-card__price">$145</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-2@1x.webp 1x, img/image-product-2@1x.webp 2x">
+                            <img src="img/image-product-2@1x.jpg" srcset="img/image-product-2@1x.jpg 1x, img/image-product-2@2x.jpg 2x" alt="Layered choker" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Layered choker</h3>
+                        </a>
+                        <span class="product-card__price">$115</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-3@1x.webp 1x, img/image-product-3@1x.webp 2x">
+                            <img src="img/image-product-3@1x.jpg" srcset="img/image-product-3@1x.jpg 1x, img/image-product-3@2x.jpg 2x" alt="Gold chain" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Gold chain</h3>
+                        </a>
+                        <span class="product-card__price">$215</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider">
+                        <a href="#" class="product-card__picture product-card__picture--slider">
+                          <picture>
+                            <source type="image/webp" srcset="img/image-product-4@1x.webp 1x, img/image-product-4@1x.webp 2x">
+                            <img src="img/image-product-4@1x.jpg" srcset="img/image-product-4@1x.jpg 1x, img/image-product-4@2x.jpg 2x" alt="Galaxy earrings" width="270" height="284">
+                          </picture>
+                        </a>
+                        <a href="#" class="product-card__link">
+                          <h3 class="product-card__name">Galaxy Earrings</h3>
+                        </a>
+                        <span class="product-card__price">$95</span>
+                      </li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                      <li class="slider-cards__item product-card product-card--slider"></li>
+                    </ul>
+                  </div>
+
+                  <div class="slider-cards__page-counter">
+                    <div class="page-counter">
+                      <span class="page-counter__number page-counter__number--current">1</span>
+                      <span class="page-counter__separator">of</span>
+                      <span class="page-counter__number page-counter__number--max">6</span>
+                    </div>
+                  </div>
+
+                  <div class="slider-cards__pagination pagination">
+                    <ul class="slider-cards__pagination-list pagination__list">
+                      <li class="slider-cards__pagination-item pagination__item">
+                        <button class="pagination__link pagination__link--active">1</button>
+                      </li>
+                      <li class="slider-cards__pagination-item pagination__item">
+                        <button class="pagination__link">2</button>
+                      </li>
+                      <li class="slider-cards__pagination-item pagination__item">
+                        <button class="pagination__link">3</button>
+                      </li>
+                      <li class="slider-cards__pagination-item pagination__item">
+                        <button class="pagination__link">4</button>
+                      </li>
+                      <li class="slider-cards__pagination-item pagination__item">
+                        <button class="pagination__link">5</button>
+                      </li>
+                      <li class="slider-cards__pagination-item pagination__item">
+                        <button class="pagination__link">6</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
 
@@ -136,7 +345,46 @@
           </div>
         </div>
       </footer>
-      </div>
+      <section class="modal modal-cart modal-cart--closed">
+        <div class="modal-cart__container">
+          <div class="modal-cart__button-close">
+            <button class="button-close button-close--small">
+              <span class="visually-hidden">Close</span>
+            </button>
+          </div>
+          <h2 class="modal-cart__title">The item was added to your cart</h2>
+          <div class="modal-cart__product">
+            <div class="modal-cart__product-picture">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/image-product-gallery-1-tablet@1x.webp 1x, img/image-product-gallery-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/image-product-gallery-1-desktop@1x.webp 1x, img/image-product-gallery-1-desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/image-product-gallery-1-tablet@1x.jpg 1x, img/image-product-gallery-1-tablet@2x.jpg 2x">
+                <img src="img/image-product-gallery-1-desktop@1x.jpg" scrset="img/image-product-gallery-1-desktop@1x.jpg 1x, img/image-product-gallery-1-desktop@2x.jpg 2x" alt="Image 1" width="84" height="79">
+              </picture>
+            </div>
+            <div class="modal-cart__product-info">
+              <h3 class="modal-cart__product-name">Gold Necklace</h3>
+              <span class="modal-cart__product-price">$ 115</span>
+            </div>
+            <div class="modal-cart__product-count product-count">
+              <button class="product-count__button product-count__button--add"></button>
+              <span class="product-count__number">1</span>
+              <button class="product-count__button product-count__button--remove"></button>
+            </div>
+          </div>
+          <div class="modal-cart__footer">
+            <div class="modal-cart__footer-top">
+              <p class="modal-cart__footer-text">You have 1 item in the cart</p>
+              <b class="modal-cart__footer-subtotal">Cart subtotal: $ 115</b>
+            </div>
+            <div class="modal-cart__footer-bottom">
+              <button class="modal-cart__button modal-cart__button--continue button">Continue shopping</button>
+              <a href="#" class="modal-cart__button modal-cart__button--checkout button">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

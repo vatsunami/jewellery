@@ -1,0 +1,129 @@
+.product-info {
+  box-sizing: border-box;
+  width: 370px;
+}
+
+.product-info__header {
+  margin-bottom: 40px;
+}
+
+.product-info__name {
+  margin: 0;
+  margin-bottom: 11px;
+  font-family: $cormorant-bold;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+.product-info__price {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.product-info__description {
+  margin-bottom: 50px;
+}
+
+.product-info__terms {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-info__button {
+  margin-bottom: 15px;
+}
+
+.product-info__term {
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-right: 14px;
+    padding-right: 16px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: 0;
+      display: block;
+      width: 1px;
+      height: 20px;
+      background-color: #f6f5f4;
+    }
+  }
+}
+
+.product-info__term-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey;
+}
+
+@media (max-width: $tablet-width) {
+  .product-info {
+    width: 319px;
+    margin-left: 4.817518%;
+    flex-grow: 1;
+  }
+
+  .product-info__button {
+    margin-bottom: 11px;
+  }
+
+  .product-info__term {
+    &:not(:last-of-type) {
+      margin-right: 11px;
+      padding-right: 15px;
+    }
+  }
+
+  .product-info__term-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .product-info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-info__header {
+    margin-bottom: 30px;
+  }
+
+  .product-info__description {
+    margin-bottom: 40px;
+  }
+
+  .product-info__button {
+    margin-bottom: 12px;
+  }
+
+  .product-info__term {
+    box-sizing: border-box;
+    width: 33.333333%;
+    margin: 0;
+    padding: 0 15px;
+    line-height: 14px;
+    text-align: center;
+
+    &:not(:last-of-type) {
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+
+  .product-info__term-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey;
+  }
+}

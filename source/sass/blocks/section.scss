@@ -20,7 +20,8 @@
   text-align: center;
 
   &--blog,
-  &--gallery {
+  &--gallery,
+  &--extra {
     margin-bottom: 60px;
   }
 
@@ -36,6 +37,10 @@
   margin: 0 0 24px;
 
   &--blog {
+    margin-bottom: 19px;
+  }
+
+  &--extra {
     margin-bottom: 19px;
   }
 
@@ -68,7 +73,8 @@
     margin: 0 auto 50px;
 
     &--blog,
-    &--gallery {
+    &--gallery,
+    &--extra {
       margin-bottom: 60px;
     }
 
@@ -97,6 +103,11 @@
     &--gallery {
       padding-top: 51px;
       padding-bottom: 53px;
+    }
+
+    &--extra {
+      padding-top: 56px;
+      padding-bottom: 65px;
     }
   }
 
