@@ -11,6 +11,10 @@
   &--gallery {
     padding: 111px 30px 130px;
   }
+
+  &--extra {
+    padding: 120px 30px 126px;
+  }
 }
 
 .section__header {
@@ -67,15 +71,22 @@
       padding-top: 65px;
       padding-bottom: 80px;
     }
+
+    &--extra {
+      padding-bottom: 76px;
+    }
   }
 
   .section__header {
     margin: 0 auto 50px;
 
     &--blog,
-    &--gallery,
-    &--extra {
+    &--gallery {
       margin-bottom: 60px;
+    }
+
+    &--extra {
+      margin-bottom: 50px;
     }
 
     &--no-source-link {
