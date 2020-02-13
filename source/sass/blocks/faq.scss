@@ -12,6 +12,7 @@
 .faq__item {
   box-sizing: border-box;
   border: 1px solid #a87b62;
+  padding-bottom: 36px;
 
   &:not(:last-child) {
     border-bottom: none;
@@ -23,8 +24,8 @@
   position: relative;
   display: block;
   margin: 0;
-  padding: 43px 122px 44px 42px;
-  font-family: "Poppins Medium", "Arial", sans-serif;
+  padding: 43px 122px 8px 42px;
+  font-family: $poppins-medium;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -55,8 +56,6 @@
   }
 
   &--opened {
-    padding-bottom: 8px;
-
     &::after {
       transform: rotate(180deg);
     }
@@ -75,7 +74,7 @@
   box-sizing: border-box;
   max-width: 570px;
   margin: 0;
-  padding: 0 0 41px 50px;
+  padding: 0 0 5px 50px;
   font-size: 16px;
   line-height: 21px;
 }
@@ -88,28 +87,28 @@
   }
 
   .faq__question {
-    padding: 43px 90px 44px 49px;
+    padding: 43px 90px 8px 49px;
 
     &::after {
       top: 40px;
       right: 46px;
       background-size: 25px 16px;
     }
-
-    &--opened {
-      padding-bottom: 26px;
-    }
   }
 
   .faq__answer-text {
     max-width: 600px;
-    padding: 0 0 44px 50px;
+    padding: 18px 0 8px 50px;
   }
 }
 
 @media (max-width: $mobile-width) {
+  .faq__item {
+    padding-bottom: 12px;
+  }
+
   .faq__question {
-    padding: 18px 55px 19px 24px;
+    padding: 19px 55px 6px 24px;
     font-size: 16px;
     line-height: 22px;
 
@@ -120,9 +119,6 @@
     }
 
     &--opened {
-      padding-top: 16px;
-      padding-bottom: 14px;
-
       &::after {
         top: 14px;
       }
@@ -130,7 +126,7 @@
   }
 
   .faq__answer-text {
-    padding: 0 60px 19px 24px;
+    padding: 5px 60px 7px 24px;
     font-size: 14px;
     line-height: 20px;
   }

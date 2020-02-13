@@ -29,7 +29,7 @@
                 <use xlink:href="#icon-search"></use>
               </svg>
             </form>
-            <a href="#" class="page-header__logo logo">
+            <a href="main.html" class="page-header__logo logo">
               <img class="logo__img" src="img/logo.svg" alt="Jewellery" width="66" height="66">
               <img class="logo__img" src="img/logo-reverse.svg" alt="Jewellery" width="66" height="66">
             </a>
@@ -143,7 +143,7 @@
                       <button class="info-tabs__toggle info-tabs__toggle--active">Additional info</button>
                     </div>
                     <div class="info-tabs__sections">
-                      <div class="info-tabs__section">
+                      <div class="info-tabs__section info-tabs__section--active">
                         <table class="info-tabs__parameters parameters">
                           <tbody class="parameters__body">
                             <tr class="parameters__row">
@@ -164,7 +164,7 @@
                       <div class="info-tabs__section"></div>
                     </div>
                   </div>
-                  <a class="product-info__button button">Add to cart</a>
+                  <a href="#" class="product-info__button button">Add to cart</a>
                   <ul class="product-info__terms">
                     <li class="product-info__term">
                       <span class="product-info__term-text">14 Day Returns</span>
@@ -187,7 +187,7 @@
                 <h2 class="section__title section__title--extra title">
                   <span class="section__title-text">You May Also Like</span>
                 </h2>
-                <a href="#" class="section__source-link source-link">Shop Now</a>
+                <a href="catalog.html" class="section__source-link source-link">Shop Now</a>
               </div>
               <div class="section__slider-cards slider-cards">
                 <div class="slider-cards__container">
@@ -349,6 +349,42 @@
           </div>
         </div>
       </footer>
+      <section class="modal modal-login modal-login--closed">
+        <div class="modal-login__container">
+          <div class="modal-login__button-close">
+            <button class="button-close">
+              <span class="visually-hidden">Close</span>
+            </button>
+          </div>
+          <div class="modal-login__content">
+            <form class="modal-login__form form-login" action="https://echo.htmlacademy.ru" method="post">
+              <h2 class="form-login__title title">Log In</h2>
+              <ul class="form-login__filds-list">
+                <li class="form-login__filds-item">
+                  <label class="visually-hidden">E-mail:</label>
+                  <input class="form-login__input" type="email" placeholder="Your E-mail" name="email" required="">
+                </li>
+                <li class="form-login__filds-item">
+                  <label class="visually-hidden">Password:</label>
+                  <input class="form-login__input" type="password" placeholder="Password" name="password" required="">
+                  <div class="form-login__help">
+                    <a href="#" class="form-login__recover-link">Forgot your password?</a>
+                  </div>
+                </li>
+              </ul>
+              <button class="form-login__button button" type="submit">Log in</button>
+              <div class="form-login__signup">
+                <div class="form-login__signup-left">
+                  <span class="form-login__signup-text">Don't have an account?</span>
+                </div>
+                <div class="form-login__signup-right">
+                  <a class="form-login__signup-link" href="">Sign up</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
       <section class="modal modal-cart modal-cart--closed">
         <div class="modal-cart__container">
           <div class="modal-cart__button-close">
@@ -382,7 +418,7 @@
               <b class="modal-cart__footer-subtotal">Cart subtotal: $ 115</b>
             </div>
             <div class="modal-cart__footer-bottom">
-              <button class="modal-cart__button modal-cart__button--continue button">Continue shopping</button>
+              <a href="catalog.html" class="modal-cart__button modal-cart__button--continue button">Continue shopping</a>
               <a href="#" class="modal-cart__button modal-cart__button--checkout button">Checkout</a>
             </div>
           </div>

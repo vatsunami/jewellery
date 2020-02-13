@@ -60,6 +60,11 @@
   display: none;
 }
 
+.slider-cards__pagination-list {
+  width: 300px;
+  margin: 0 auto;
+}
+
 .slider-cards__pagination-item {
   &:nth-of-type(n + 4) {
     display: none;

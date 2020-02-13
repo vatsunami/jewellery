@@ -78,7 +78,7 @@
 .article-card__title {
   margin: 0;
   margin-bottom: 25px;
-  font-family: "Cormorant Garamond SemiBold", "Times New Roman", serif;
+  font-family: $cormorant-semibold;
   font-weight: 600;
   font-size: 26px;
   line-height: 34px;
@@ -87,7 +87,7 @@
 .article-card__date {
   display: inline-block;
   margin-bottom: 13px;
-  font-family: "Poppins Medium", "Arial", sans-serif;
+  font-family: $poppins-medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;

@@ -1,6 +1,8 @@
 .pagination__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,6 +34,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .pagination__list {
+    width: 200px;
+  }
+
   .pagination__link {
     margin: 0 6px 0 7px;
     padding: 0 5px;

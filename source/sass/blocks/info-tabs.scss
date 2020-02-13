@@ -1,3 +1,12 @@
+.info-tabs__section {
+  display: none;
+
+  &--active {
+    min-height: 120px;
+    display: block;
+  }
+}
+
 .info-tabs__toggles {
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +23,12 @@
 
   &--active {
     color: $black;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .info-tabs__sections {
+    min-height: 3px;
   }
 }
 
