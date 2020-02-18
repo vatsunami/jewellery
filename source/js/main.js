@@ -22,7 +22,7 @@
 })();
 
 
-(function () {
+var headerMenu = (function () {
   var pageHeader = document.querySelector('.page-header');
 
   if (pageHeader) {
@@ -132,7 +132,7 @@ accordion('#accordion-faq', '.faq__question', '.faq__answer');
 accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__group');
 
 
-(function () {
+var modalLogin = (function () {
   var ESC_KEYCODE = 27;
   var login = document.querySelector('.modal-login');
 
@@ -216,7 +216,7 @@ accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__g
 })();
 
 
-(function () {
+var modalFilters = (function () {
   var filters = document.querySelector('.catalog-filters');
 
   if (filters) {
@@ -253,7 +253,7 @@ accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__g
 })();
 
 
-(function () {
+var modalCart = (function () {
   var ESC_KEYCODE = 27;
   var cart = document.querySelector('.modal-cart');
 
@@ -311,7 +311,7 @@ accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__g
 })();
 
 
-(function () {
+var productCardInfoTabs = (function () {
   var tabs = document.querySelector('.info-tabs');
 
   if (tabs) {
@@ -562,7 +562,7 @@ sliderMultipleCards('#slider-new-in');
 sliderMultipleCards('#slider-extra');
 
 
-(function () {
+var productGallery = (function () {
   var gallery = document.querySelector('.product-gallery');
 
   if (gallery) {
