@@ -89,14 +89,6 @@
             <div class="product__container">
               <div class="product__wrapper">
                 <div class="product__gallery product-gallery">
-                  <div class="product-gallery__toggles">
-                    <button class="product-gallery__toggle">
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="product-gallery__toggle">
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
                   <ul class="product-gallery__pictures">
                     <li class="product-gallery__picture product-gallery__picture--large">
                       <picture>
@@ -131,6 +123,13 @@
                       </picture>
                     </li>
                   </ul>
+                  <div class="product-gallery__page-counter">
+                    <div class="page-counter">
+                      <span class="page-counter__number page-counter__number--small page-counter__number--current">1</span>
+                      <span class="page-counter__separator page-counter__separator--small">of</span>
+                      <span class="page-counter__number page-counter__number--small page-counter__number--max">4</span>
+                    </div>
+                  </div>
                 </div>
                 <div class="product__info product-info">
                   <div class="product-info__header">
@@ -189,7 +188,7 @@
                 </h2>
                 <a href="catalog.html" class="section__source-link source-link">Shop Now</a>
               </div>
-              <div class="section__slider-cards slider-cards">
+              <div class="section__slider-cards slider-cards" id="slider-extra">
                 <div class="slider-cards__container">
                   <div class="slider-cards__toggles">
                     <button class="slider-cards__toggle slider-cards__toggle--prev">

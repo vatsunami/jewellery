@@ -105,7 +105,8 @@
 
 @media (max-width: $mobile-width) {
   .section__container {
-    padding: 60px 4.6875% 0;
+    // padding: 60px 4.6875% 0;
+    padding: 60px 15px 0;
 
     &--blog {
       padding-top: 55px;

@@ -9,6 +9,11 @@
   font-family: $poppins-medium;
   font-size: 16px;
   line-height: 21px;
+
+  &--small {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .page-counter__number {
@@ -21,4 +26,8 @@
 
 .page-counter__separator {
   margin: 0 10px;
+
+  &--small {
+    margin: 0 5px;
+  }
 }
