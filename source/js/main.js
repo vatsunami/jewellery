@@ -18,11 +18,11 @@
 
   window.utils = {
     generateNewSelectorClass: generateNewSelectorClass
-  }
+  };
 })();
 
 
-var headerMenu = (function () {
+(function headerMenu() {
   var pageHeader = document.querySelector('.page-header');
 
   if (pageHeader) {
@@ -108,7 +108,9 @@ var accordion = (function () {
 
       var switchActiveClasses = function (toggle, content) {
         toggle.classList.toggle(window.utils.generateNewSelectorClass(toggleClass, '--opened'));
-        content.classList.toggle(window.utils.generateNewSelectorClass(contentClass, '--opened'));
+        if (content) {
+          content.classList.toggle(window.utils.generateNewSelectorClass(contentClass, '--opened'));
+        }
       };
 
       var onToggleClick = function (evt) {
@@ -125,14 +127,14 @@ var accordion = (function () {
 
       accordionContainer.addEventListener('click', onToggleClick);
     }
-  }
+  };
 })();
 
 accordion('#accordion-faq', '.faq__question', '.faq__answer');
 accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__group');
 
 
-var modalLogin = (function () {
+(function modalLogin() {
   var ESC_KEYCODE = 27;
   var login = document.querySelector('.modal-login');
 
@@ -147,7 +149,7 @@ var modalLogin = (function () {
     var storage = '';
 
     try {
-      storage = localStorage.getItem("inputEmail");
+      storage = localStorage.getItem('inputEmail');
     } catch (err) {
       isStorageSupport = false;
     }
@@ -161,7 +163,7 @@ var modalLogin = (function () {
       login.addEventListener('click', onOverlayClick);
       document.addEventListener('keydown', onEscPress);
       if (isStorageSupport && storage) {
-        inputEmail.value = localStorage.getItem("inputEmail");
+        inputEmail.value = localStorage.getItem('inputEmail');
         inputPassword.focus();
       }
     };
@@ -206,7 +208,7 @@ var modalLogin = (function () {
 
     var onFormSubmit = function () {
       if (isStorageSupport) {
-        localStorage.setItem("inputEmail", inputEmail.value);
+        localStorage.setItem('inputEmail', inputEmail.value);
       }
     };
 
@@ -216,7 +218,7 @@ var modalLogin = (function () {
 })();
 
 
-var modalFilters = (function () {
+(function modalFilters() {
   var filters = document.querySelector('.catalog-filters');
 
   if (filters) {
@@ -253,7 +255,7 @@ var modalFilters = (function () {
 })();
 
 
-var modalCart = (function () {
+(function modalCart() {
   var ESC_KEYCODE = 27;
   var cart = document.querySelector('.modal-cart');
 
@@ -311,7 +313,7 @@ var modalCart = (function () {
 })();
 
 
-var productCardInfoTabs = (function () {
+(function productCardInfoTabs() {
   var tabs = document.querySelector('.info-tabs');
 
   if (tabs) {
@@ -342,7 +344,7 @@ var productCardInfoTabs = (function () {
         activeTabIndex = togglesArray.indexOf(target);
         switchActiveTab();
       }
-    };;
+    };
 
     tabs.addEventListener('click', onToggleClick);
   }
@@ -369,7 +371,7 @@ var sliderMultipleCards = (function () {
       var wrapper = container.querySelector('.slider-cards__list-wrapper');
       var buttonPrev = container.querySelector('.slider-cards__toggle--prev');
       var buttonNext = container.querySelector('.slider-cards__toggle--next');
-      var cardsList =  container.querySelector('.slider-cards__list');
+      var cardsList = container.querySelector('.slider-cards__list');
       var cardsItems = container.querySelectorAll('.slider-cards__item');
       var cardsItemsArray = [].slice.call(cardsItems);
       var pagination = container.querySelector('.pagination');
@@ -379,7 +381,6 @@ var sliderMultipleCards = (function () {
       var pageCounterCurrent = pageCounter.querySelector('.page-counter__number--current');
       var countOfActiveCards;
       var topLimitForResizeContainer = 1230;
-      var totalCountOfCards = 12;
       var itemsArray = [];
       var swipeMinWidth = 70;
       var swipeStartX;
@@ -390,7 +391,7 @@ var sliderMultipleCards = (function () {
       var pageCounterValue = 1;
 
       var fillItemsArray = function () {
-        cardsItemsArray.forEach(function (item, index) {
+        cardsItemsArray.forEach(function (item) {
           itemsArray.push(item);
         });
       };
@@ -456,7 +457,7 @@ var sliderMultipleCards = (function () {
             cardsList.appendChild(element);
           });
           setActivePaginationButtonByDirection(direction);
-          setPageCounterCurrentValue(direction);
+          setPageCounterCurrentValue();
         } else if (!direction && itemsArray.indexOf(firstCard) !== 0) {
           elementsForMove = itemsArray.slice(-countOfActiveCards);
           elementsForMove.forEach(function (element) {
@@ -464,8 +465,8 @@ var sliderMultipleCards = (function () {
             itemsArray.unshift(removedItem);
             cardsList.insertBefore(element, firstElement);
           });
-          setActivePaginationButtonByDirection(direction)
-          setPageCounterCurrentValue(direction);
+          setActivePaginationButtonByDirection(direction);
+          setPageCounterCurrentValue();
         } else {
           return;
         }
@@ -486,7 +487,7 @@ var sliderMultipleCards = (function () {
         }
       };
 
-      var setPageCounterCurrentValue = function (direction) {
+      var setPageCounterCurrentValue = function () {
         pageCounterValue = indexOfPaginationButtonActive;
         pageCounterCurrent.innerHTML = pageCounterValue + 1;
       };
@@ -555,14 +556,14 @@ var sliderMultipleCards = (function () {
         }
       });
     }
-  }
+  };
 })();
 
 sliderMultipleCards('#slider-new-in');
 sliderMultipleCards('#slider-extra');
 
 
-var productGallery = (function () {
+(function productGallery() {
   var gallery = document.querySelector('.product-gallery');
 
   if (gallery) {

@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Карточка товара</title>
+    <title>Card</title>
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement("picture");
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js" async></script>
   </head>
   <body>
     <div style="display:none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-
     <div class="page-wrapper">
       <div class="page-content">
         <header class="page-header">
@@ -24,6 +23,7 @@
               <span class="visually-hidden">Show/close menu</span>
             </button>
             <form class="page-header__form-search form-search" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="search">Search:</label>
               <input class="form-search__input" type="search" placeholder="Type here to search" name="search">
               <svg class="form-search__icon" width="14" height="14" viewBox="0 0 14 14">
                 <use xlink:href="#icon-search"></use>
