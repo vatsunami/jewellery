@@ -46,10 +46,12 @@
 
   &--extra {
     margin-bottom: 19px;
+    letter-spacing: 0;
   }
 
   &--at {
     margin-bottom: 17px;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -105,7 +107,6 @@
 
 @media (max-width: $mobile-width) {
   .section__container {
-    // padding: 60px 4.6875% 0;
     padding: 60px 15px 0;
 
     &--blog {

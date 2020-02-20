@@ -1,7 +1,8 @@
 .noscroll {
   &--header-menu,
   &--login,
-  &--filters {
+  &--filters,
+  &--cart {
     overflow-y: hidden;
   }
 }

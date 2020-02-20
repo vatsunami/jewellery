@@ -11,6 +11,10 @@ body {
   color: $black;
 }
 
+* {
+  outline: none;
+}
+
 img {
   max-width: 100%;
   border-style: none;

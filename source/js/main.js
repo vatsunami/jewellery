@@ -262,10 +262,12 @@ accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__g
   if (cart) {
     var cartContainer = cart.querySelector('.modal-cart__container');
     var buttonOpen = document.querySelector('.product-info__button');
-    var buttonClose = cartContainer.querySelector('.modal-cart__button-close');
+    var buttonClose = cartContainer.querySelector('.button-close');
 
     var showCart = function () {
+      document.body.classList.add('noscroll--cart');
       cart.classList.remove(window.utils.generateNewSelectorClass('.modal-cart', '--closed'));
+      buttonClose.focus();
       buttonOpen.removeEventListener('click', onButtonOpenClick);
       buttonClose.addEventListener('click', onButtonCloseClick);
       cart.addEventListener('click', onOverlayClick);
@@ -273,7 +275,9 @@ accordion('#accordion-filters', '.catalog-filters__toggle', '.catalog-filters__g
     };
 
     var hideCart = function () {
+      document.body.classList.remove('noscroll--cart');
       cart.classList.add(window.utils.generateNewSelectorClass('.modal-cart', '--closed'));
+      buttonOpen.focus();
       buttonOpen.addEventListener('click', onButtonOpenClick);
       buttonClose.removeEventListener('click', onButtonCloseClick);
       document.removeEventListener('keydown', onEscPress);

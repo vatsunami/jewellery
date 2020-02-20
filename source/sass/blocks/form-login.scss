@@ -41,6 +41,8 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $black;
+  border-radius: 0;
+  appearance: none;
 
   &:hover {
     opacity: 0.7;
