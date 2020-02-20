@@ -40,7 +40,7 @@
             </ul>
             <ul class="page-header__user-nav user-nav">
               <li class="user-nav__item user-cart">
-                <a href="#" class="user-cart__link link">
+                <a href="#" class="user-cart__link link" aria-label="Cart">
                   <span class="user-cart__text">Cart 0</span>
                   <span class="user-cart__icon-wrapper">
                     <svg class="user-cart__icon" width="20" height="18" viewBox="0 0 20 18">
@@ -360,8 +360,8 @@
             <b class="subscribe__title title">The good stuff in your inbox</b>
             <p class="subscribe__text">News and updates from CH. No spam, we promise.</p>
             <form class="subscribe__form form-email" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden">E-mail:</label>
-              <input class="form-email__input" type="email" placeholder="Your E-mail">
+              <label class="visually-hidden" for="subscribe-email">E-mail:</label>
+              <input class="form-email__input" type="email" placeholder="Your E-mail" id="subscribe-email">
               <button class="form-email__button" type="submit">Sign Up</button>
             </form>
           </section>
@@ -382,22 +382,22 @@
               <b class="visually-hidden">Мы в социальных сетях</b>
               <ul class="social__list">
                 <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">
+                  <a class="social__link social__link--facebook" href="#" aria-label="Facebook">
                     <span class="social__link-text">Facebook</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--instagram" href="#">
+                  <a class="social__link social__link--instagram" href="#" aria-label="Instagram">
                     <span class="social__link-text">Instagram</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--pinterest" href="#">
+                  <a class="social__link social__link--pinterest" href="#" aria-label="Pinterest">
                     <span class="social__link-text">Pinterest</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--twitter" href="#">
+                  <a class="social__link social__link--twitter" href="#" aria-label="Twitter">
                     <span class="social__link-text">Twitter</span>
                   </a>
                 </li>
@@ -444,5 +444,6 @@
       </section>
     </div>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js" async></script>
   </body>
 </html>

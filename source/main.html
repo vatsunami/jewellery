@@ -40,7 +40,7 @@
             </ul>
             <ul class="page-header__user-nav user-nav">
               <li class="user-nav__item user-cart">
-                <a href="#" class="user-cart__link link">
+                <a href="#" class="user-cart__link link" aria-label="Cart">
                   <span class="user-cart__text">Cart 0</span>
                   <span class="user-cart__icon-wrapper">
                     <svg class="user-cart__icon" width="20" height="18" viewBox="0 0 20 18">
@@ -334,8 +334,10 @@
                   <div class="gallery-normal__right">
                     <div class="gallery-normal__picture gallery-normal__picture--large">
                       <picture>
-                        <source media="(max-width: 767px)" srcset="img/image-gallery-3-mobile@2x.jpg">
-                        <img src="img/image-gallery-3-desktop@2x.jpg" alt="Image 3" width="400" height="414">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/image-gallery-3-mobile@1x.webp 1x, img/image-gallery-3-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/image-gallery-3-desktop@1x.webp 1x, img/image-gallery-3-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/image-gallery-3-mobile@1x.jpg 1x, img/image-gallery-3-mobile@2x.jpg 2x">
+                        <img src="img/image-gallery-3-desktop@2x.jpg" srcset="img/image-gallery-3-desktop@1x.jpg 1x, img/image-gallery-3-desktop@2x.jpg 2x" alt="Image 3" width="400" height="414">
                       </picture>
                     </div>
                   </div>
@@ -405,22 +407,22 @@
               <b class="visually-hidden">Мы в социальных сетях</b>
               <ul class="social__list">
                 <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">
+                  <a class="social__link social__link--facebook" href="#" aria-label="Facebook">
                     <span class="social__link-text">Facebook</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--instagram" href="#">
+                  <a class="social__link social__link--instagram" href="#" aria-label="Facebook">
                     <span class="social__link-text">Instagram</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--pinterest" href="#">
+                  <a class="social__link social__link--pinterest" href="#" aria-label="Pinterest">
                     <span class="social__link-text">Pinterest</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--twitter" href="#">
+                  <a class="social__link social__link--twitter" href="#" aria-label="Twitter">
                     <span class="social__link-text">Twitter</span>
                   </a>
                 </li>
@@ -467,5 +469,6 @@
       </section>
     </div>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js" async></script>
   </body>
 </html>

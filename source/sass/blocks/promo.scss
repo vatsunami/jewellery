@@ -12,6 +12,14 @@
   }
 }
 
+.webp .promo {
+  background-image: url("../img/background-promo-catalog-desktop@1x.webp");
+
+  &--main {
+    background-image: url("../img/background-promo-main-desktop@1x.webp");
+  }
+}
+
 @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
   .promo {
@@ -19,6 +27,14 @@
 
     &--main {
       background-image: url("../img/background-promo-main-desktop@2x.jpg");
+    }
+  }
+
+  .webp .promo {
+    background-image: url("../img/background-promo-catalog-desktop@2x.webp");
+
+    &--main {
+      background-image: url("../img/background-promo-main-desktop@2x.webp");
     }
   }
 }
@@ -85,6 +101,14 @@
     }
   }
 
+  .webp .promo {
+    background-image: url("../img/background-promo-catalog-tablet@1x.webp");
+
+    &--main {
+      background-image: url("../img/background-promo-main-tablet@1x.webp");
+    }
+  }
+
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
     .promo {
@@ -92,6 +116,14 @@
 
       &--main {
         background-image: url("../img/background-promo-main-tablet@2x.jpg");
+      }
+    }
+
+    .webp .promo {
+      background-image: url("../img/background-promo-catalog-tablet@2x.webp");
+
+      &--main {
+        background-image: url("../img/background-promo-main-tablet@2x.webp");
       }
     }
   }
@@ -128,6 +160,14 @@
     }
   }
 
+  .webp .promo {
+    background-image: url("../img/background-promo-catalog-mobile@1x.webp");
+
+    &--main {
+      background-image: url("../img/background-promo-main-mobile@1x.webp");
+    }
+  }
+
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
     .promo {
@@ -135,6 +175,14 @@
 
       &--main {
         background-image: url("../img/background-promo-main-mobile@2x.jpg");
+      }
+    }
+
+    .webp .promo {
+      background-image: url("../img/background-promo-catalog-mobile@2x.webp");
+
+      &--main {
+        background-image: url("../img/background-promo-main-mobile@2x.webp");
       }
     }
   }
